@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- 
+    1. h1 - h6 : các tiêu đề trong web
+    2. p : văn bản trong web
+    3. img : ảnh trong web
+    4. a : nơi để link web
+    5. table : bảng
+    6. input : tạo nơi để nhập chữ, đánh dấu tích, v.v
+    7. button : tạo nút
+    8. ul, li : danh sách
+    9. div : bao quanh 1 mảng thành 1 khối(ko có viền)
+ -->
+    <!-- internal
+        external
+        inline -->
+<html>
+    <!-- Phần Đầu -->
+    <head>
+        <title>Long - Béo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <link rel="stylesheet" href="main.css">
+    <!-- <style>
+        h1 {
+            color: blue;
+        }
+    </style> -->
+    <!-- Phần Thân -->
+    <body>
+        <div>
+            <h1>Ảnh về Long Béo</h1>
+        <p id="cau-hoi">Giới tính của Long Béo là gì?</p>
+        Nam<input name="gender" type="radio">
+        Nữ<input name="gender" type="radio">
+        Khác<input name="gender" type="radio">
+        <img width="250" src="img/LongBeo.jpg" alt="Ảnh Long Béo">
+        <a href="https://www.facebook.com/hoanglong.le.904750">Facebook Long Béo</a>
+        <ol><h2 style="color: aqua; font-size: 25px;">Danh sách bạn của Long Béo</h2>
+            <li>Trần Văn Long</li>
+            <li>Nguyễn Việt Hưng</li>
+            <li>Nguyễn Xuân Lộc</li>
+            <li>Đỗ Quốc Bảo</li>
+        </ol>
+        <table>
+            <thead>
+                <th class="muc">STT</th>
+                <th class="muc">Tên</th>
+                <th class="muc">Ngày sinh</th>
+                <th class="muc">Quê quán</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Trần Văn Long</td>
+                    <td>10/04/1997</td>
+                    <td>Giao Thủy-Nam Định</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Nguyễn Việt Hưng</td>
+                    <td>05/04/1997</td>
+                    <td>Giao Thủy-Nam Định</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Nguyễn Xuân Lộc</td>
+                    <td>21/10/1997</td>
+                    <td>Giao Thủy-Nam Định</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Đỗ Quốc Bảo</td>
+                    <td>17/04/1997</td>
+                    <td>Giao Thủy-Nam Định</td>
+                </tr>
+            </tbody>
+        </table>
+        <button>Kết thúc</button>
+            <style>
+                .parent .children {
+                    color: red;
+                }
+            </style>
+            <!-- Trường hợp .children là con trực tiếp của .parent -->
+                <div class="parent">
+                    <div class="children">Children 1</div>
+                    <div class="children">Children 2</div>
+                    <div class="children">Children 3</div>
+                </div>
+        
+            <!-- Hoặc các .children nằm rải rác, miễn là con của .parent -->
+            <div class="parent">
+                <div class="children">Children 1</div>
+        
+                <div class="other-div">
+                    <div class="children">Children 2</div>
+                
+                    <div class="other-div">
+                        <div class="children">Children 3</div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .paragraph.p1 {
+                    color: red;
+                }
+            </style>
+            <h1>Heading 1</h1>
+            <p class="paragraph p1">Paragraph 1</p>
+            <p class="paragraph p1">Paragraph 1</p>
+            <p class="paragraph">Paragraph 2</p>
+            <h2 class="pp1">H2</h2>
+            
+        </div>
+    </body>
+</html>
